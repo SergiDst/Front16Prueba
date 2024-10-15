@@ -1,28 +1,23 @@
-<comp-header-gestion/>
+<comp-header-gestion />
 
 <section class="container-fluid mt-5">
-    <div class="row">
+  <div class="row">
+    <div class="col-7">
+      <!-- card muestra stock -->
+      <comp-card-stock />
 
-        <div class="col-7">
-
-            <!-- card muestra stock -->
-            <comp-card-stock/>
-
-            <!-- barra de busqueda -->
-            <comp-barra-busqueda/>
-        </div>
-
-        <div class="col">
-
-            <div class="d-flex flex-column mt-5 ms-auto">
-                <!-- botones crud -->
-                <comp-btn-crud/>
-            </div>
-
-            <div class="separador"></div>
-
-            <!-- boton codigo de barras -->
-            <comp-btn-codigo-barras/>
-        </div>
+      <!-- barra de busqueda -->
+      <comp-barra-busqueda />
     </div>
+
+    <div class="col">
+      <!-- botones crud -->
+      <comp-btn-crud />
+
+      <div class="separador"></div>
+
+      <!-- boton codigo de barras -->
+      <comp-btn-codigo-barras />
+    </div>
+  </div>
 </section>

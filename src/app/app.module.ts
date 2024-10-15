@@ -7,12 +7,14 @@ import { HeaderPrincipalComponent } from './comp-header-principal/header-princip
 import { SectionLogoComponent } from './comp-section-logo/section-logo.component';
 import { AutenticacionModule } from './moduloAutenticacion/autenticacion.module';
 import { ModuloEmpleadoModule } from './modulo-empleado/modulo-empleado.module';
+import { CompLoginComponent } from './comp-login/comp-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderPrincipalComponent,
-    SectionLogoComponent
+    SectionLogoComponent,
+    CompLoginComponent
   ],
   imports: [
     BrowserModule,
