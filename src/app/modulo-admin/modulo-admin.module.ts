@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PaginaAdminComponent } from './pagina-admin/pagina-admin.component';
+import { ModulosCompartidosModule } from '../modulosCompartidos/modulos-compartidos.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PaginaAdminComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ModulosCompartidosModule
   ]
 })
 export class ModuloAdminModule { }
