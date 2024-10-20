@@ -12,6 +12,9 @@ import { ModulosCompartidosModule } from '../modulosCompartidos/modulos-comparti
   imports: [
     CommonModule,
     ModulosCompartidosModule
+  ],
+  exports:[
+    PaginaAdminComponent
   ]
 })
 export class ModuloAdminModule { }

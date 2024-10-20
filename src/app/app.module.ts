@@ -8,6 +8,8 @@ import { SectionLogoComponent } from './comp-section-logo/section-logo.component
 import { AutenticacionModule } from './moduloAutenticacion/autenticacion.module';
 import { ModuloEmpleadoModule } from './modulo-empleado/modulo-empleado.module';
 import { CompLoginComponent } from './comp-login/comp-login.component';
+import { ModuloAdminModule } from './modulo-admin/modulo-admin.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CompLoginComponent } from './comp-login/comp-login.component';
     BrowserModule,
     AppRoutingModule,
     AutenticacionModule,
-    ModuloEmpleadoModule
+    ModuloEmpleadoModule,
+    ModuloAdminModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

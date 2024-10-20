@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
+import {MatBadgeModule} from '@angular/material/badge';
 import { CompHeaderGestionComponent } from './comp-header-gestion/comp-header-gestion.component';
 import { CompBtnCRUDComponent } from './comp-btn-crud/comp-btn-crud.component';
 import { CompCardStockComponent } from './comp-card-stock/comp-card-stock.component';
 import { CompBarraBusquedaComponent } from './comp-barra-busqueda/comp-barra-busqueda.component';
 import { CompBtnCodigoBarrasComponent } from './comp-btn-codigo-barras/comp-btn-codigo-barras.component';
+import { CompSelectoresComponent } from './comp-selectores/comp-selectores.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -15,18 +19,24 @@ import { CompBtnCodigoBarrasComponent } from './comp-btn-codigo-barras/comp-btn-
     CompBtnCRUDComponent,
     CompCardStockComponent,
     CompBarraBusquedaComponent,
-    CompBtnCodigoBarrasComponent
+    CompBtnCodigoBarrasComponent,
+    CompSelectoresComponent
   ],
   imports: [
     CommonModule,
-    MatCardModule
+    MatCardModule,
+    MatBadgeModule,
+    NgFor,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   exports: [
     CompHeaderGestionComponent,
     CompBarraBusquedaComponent,
     CompBtnCRUDComponent,
     CompBtnCodigoBarrasComponent,
-    CompCardStockComponent
+    CompCardStockComponent,
+    CompSelectoresComponent
   ]
 })
 export class ModulosCompartidosModule { }
