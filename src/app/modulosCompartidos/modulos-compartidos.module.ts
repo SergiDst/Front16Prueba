@@ -10,7 +10,15 @@ import { CompBtnCodigoBarrasComponent } from './comp-btn-codigo-barras/comp-btn-
 import { CompSelectoresComponent } from './comp-selectores/comp-selectores.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { CompTablaComponent } from './comp-tabla/comp-tabla.component';
+import {MatInputModule} from '@angular/material/input';
+import { MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule} from '@angular/material/sort';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { PaginaAlertasComponent } from './pagina-alertas/pagina-alertas.component';
+import { HeaderPrincipalComponent } from './comp-header-principal/header-principal.component';
+import { MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -20,7 +28,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     CompCardStockComponent,
     CompBarraBusquedaComponent,
     CompBtnCodigoBarrasComponent,
-    CompSelectoresComponent
+    CompSelectoresComponent,
+    CompTablaComponent,
+    PaginaAlertasComponent,
+    HeaderPrincipalComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +39,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatBadgeModule,
     NgFor,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatExpansionModule
   ],
   exports: [
     CompHeaderGestionComponent,
@@ -36,7 +53,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     CompBtnCRUDComponent,
     CompBtnCodigoBarrasComponent,
     CompCardStockComponent,
-    CompSelectoresComponent
+    CompSelectoresComponent,
+    CompTablaComponent,
+    HeaderPrincipalComponent
   ]
 })
 export class ModulosCompartidosModule { }

@@ -23,8 +23,8 @@ export class CompSelectoresComponent {
   ];
 
   inventarios: Inventario[] = [
-    {id: 1, name: 'Inventario ROPA'},
-    {id: 2, name: 'Inventario ALIMENTOS'},
+    {id: 1, name: 'Inventario ROPA', alertas: 4},
+    {id: 2, name: 'Inventario ALIMENTOS', alertas: 8},
   ];
 
   seleccionado = false;
