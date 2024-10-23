@@ -28,8 +28,10 @@ export class CompSelectoresComponent {
   ];
 
   seleccionado = false;
+  inventarioSeleccionado: string | null = null;
 
   seleccionTienda(event: any) {
     this.seleccionado = true;
+    this.inventarioSeleccionado = null;
   }
 }
